@@ -688,3 +688,13 @@ div.team-member-description {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+/* -------------------backdrop------------------- */
+.backdrop {
+  position: fixed;
+  width: 322px;
+  height: 168px;
+  left: 239px;
+  top: 323px;
+  background-color: var(--light-text-color);
+}
