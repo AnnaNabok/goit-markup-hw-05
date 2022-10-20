@@ -157,17 +157,16 @@ img {
   color: var(--accent-color);
 }
 
+.site-nav .link,
+.auth-nav .link,
+.footer .link,
+.auth-nav-link {
+  transition: color 250ms var(--transition-timing-function);
+}
+
 .auth-nav {
   display: flex;
   margin-left: auto;
-}
-
-.auth-nav .link {
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .auth-nav .item + .item {
@@ -187,6 +186,11 @@ img {
 .auth-nav-link {
   display: flex;
   align-items: center;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav-link:hover,
@@ -197,6 +201,10 @@ img {
 .auth-nav-link:hover .address-icon,
 .auth-nav-link:focus .address-icon {
   fill: var(--accent-color);
+}
+
+.auth-nav-link .address-icon {
+  transition: fill 250ms var(--transition-timing-function);
 }
 
 /* -----------------hero------------------- */
@@ -249,6 +257,9 @@ img {
   border: none;
   min-width: 216px;
   text-align: center;
+
+  transition: color 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function);
 }
 
 .hero-button:hover,
@@ -420,6 +431,7 @@ div.team-member-description {
   align-items: center;
   justify-content: center;
   background-color: var(--light-text-color);
+  transition: background-color 250ms var(--transition-timing-function);
 }
 
 .team-soc-link:hover,
@@ -436,6 +448,7 @@ div.team-member-description {
 
 .team-soc-icon {
   fill: var(--primary-icon-color);
+  transition: fill 250ms var(--transition-timing-function);
 }
 /* ------------------------clients------------------------ */
 .clients-list {
@@ -460,6 +473,7 @@ div.team-member-description {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transition: border 250ms var(--transition-timing-function);
 }
 
 .clients-icon {
@@ -491,13 +505,14 @@ div.team-member-description {
   margin-bottom: 50px;
 }
 
-.portfolio .button {
+.portfolio-button {
   font-family: Roboto, sans-serif;
   display: inline-block;
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
   min-width: 73px;
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
@@ -521,6 +536,7 @@ div.team-member-description {
   display: block;
   width: 100%;
   height: 100%;
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
 
 /* .portfolio-link:hover,
@@ -666,6 +682,8 @@ div.team-member-description {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--light-text-color);
+  transition: background-color 250ms var(--transition-timing-function),
+    fill 250ms var(--transition-timing-function);
 }
 
 /* -----------------buttons-------------------------- */
@@ -678,7 +696,8 @@ div.team-member-description {
   letter-spacing: 0.03em;
   cursor: pointer;
 
-  transition: var(--transition);
+  transition: color 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function);
 }
 
 .button.primary {
