@@ -70,16 +70,11 @@ img {
 }
 
 .page-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: var(--light-text-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
-  z-index: 3;
 }
 
 .logo {
@@ -478,8 +473,7 @@ div.team-member-description {
 
 .clients-icon {
   fill: var(--primary-icon-color);
-  align-items: center;
-  justify-content: center;
+  transition: fill 250ms var(--transition-timing-function);
 }
 
 .clients-link:hover .clients-icon,
@@ -730,6 +724,8 @@ div.team-member-description {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
+  /* transition: transform 250ms var(--transition-timing-function),
+    opacity 250ms var(--transition-timing-function); */
 }
 
 .modal {
@@ -745,7 +741,8 @@ div.team-member-description {
   opacity: 1;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--transition-timing-function);
+  transition: transform 250ms var(--transition-timing-function),
+    opacity 250ms var(--transition-timing-function);
 }
 
 .modal-close-button {
