@@ -549,21 +549,19 @@ border: 1px solid #8e8f99;
 }
 
 .subscribe-text {
-  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .subscribe-form {
   display: flex;
   gap: 24px;
-  align-items: end;
 }
 
 .subscribe-input {
-  margin-top: 16px;
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
