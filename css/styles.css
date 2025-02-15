@@ -588,11 +588,13 @@ border: 1px solid #8e8f99;
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .subscribe-btn-icon {
