@@ -742,7 +742,7 @@ border: 1px solid #8e8f99;
   border: 1px solid #4d5ae5;
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus + .input-icon-wrap .modal-input-icon {
   fill: #4d5ae5;
 }
 
